@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Fan Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Harry Potter Movies Series</h1>
+        <p>Harry Potter is a series of fantasy novels written by J.K. Rowling.
+            The novels chronicle the lives of a young wizard, Harry Potter,
+            and his friends Hermione Granger and Ron Weasley,
+            all of whom are students at Hogwarts School of Witchcraft and Wizardry.
+            The movie series contains the plot for 8 movies.
+            In the first movie, "Harry Potter and the Philosopher's Stone", Harry first
+            discovers that he is a wizard, and starts learning at Hogwarts.</p>
+        <img src="https://kcroonews.com/wp-content/uploads/2022/11/tileburnedin.jpeg" alt="Harry Potter Movies 1" />
+        <img src="https://variety.com/wp-content/uploads/2016/10/harry-potter-and-the-sorcerers-stone.jpg" alt="Harry Potter Movies 2" />
+        <p>Main part of the plot in all the movies is the rivalry between the 4 houses:
+            Gryffindor, Ravenclaw, Hufflepuff, and Slytherin.
+            Each House has their color, their symbolic animal, and unique values.</p>
+        <section id="intro">
+            <button onclick="goToPage('characters')">View Characters</button>
+            <button onclick="goToPage('books')">View Books</button>
+        </section>
+        <section id="characters" style="display: none;">
+            <h2>Popular Characters</h2>
+            <ul>
+                <li>Harry Potter</li>
+                <li>Hermione Granger</li>
+                <li>Ron Weasley</li>
+                <li>Albus Dumbledore</li>
+                <li>Severus Snape</li>
+            </ul>
+            <button onclick="goToPage('intro')">Back to Introduction</button>
+            <button onclick="goToPage('books')">View Books</button>
+        </section>
+        <section id="books" style="display: none;">
+            <h2>Books in the Series</h2>
+            <ol>
+                <li>Harry Potter and the Philosopher's Stone</li>
+                <li>Harry Potter and the Chamber of Secrets</li>
+                <li>Harry Potter and the Prisoner of Azkaban</li>
+                <li>Harry Potter and the Goblet of Fire</li>
+                <li>Harry Potter and the Order of the Phoenix</li>
+                
+            </ol>
+            <button onclick="goToPage('intro')">Back to Introduction</button>
+            <button onclick="goToPage('characters')">View Characters</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Harry Potter Fan Club</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
